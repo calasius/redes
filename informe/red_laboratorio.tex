@@ -37,3 +37,5 @@ En base al criterio propuesto, se pueden distinguir 4 nodos:
       \caption{Nodos destacados}
       \label{Nodos-destacados}
     \end{center}\end{table}
+
+Es muy probable que estos nodos distinguidos sean Routers y los dos nodos de menor información podrían ser Default Gateway/s, puesto que como en nuestra fuente estamos tomando las IPs destino de los paquetes $ARP$ $Who-has$. Esto indica que estas IPs son muy frecuentes con lo cual se podria pensar en el escenario en que la mayoría de los nodos quiere conocer la MAC del Default Gateway por lo tanto envían tramas $Who-has$ con la dirección del mismo. 
