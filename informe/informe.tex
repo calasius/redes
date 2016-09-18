@@ -1,0 +1,172 @@
+\documentclass[%
+        %draft,
+        %submission,
+        %compressed,
+        final,
+        %
+        %technote,
+        %internal,
+        %submitted,
+        %inpress,
+        %reprint,
+        %
+        %titlepage,
+        notitlepage,
+        %anonymous,
+        narroweqnarray,
+        inline,
+        %twoside,
+        ]{ieee}
+
+\usepackage{ieeefig}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+
+\begin{document}
+
+%----------------------------------------------------------------------
+% Title Information, Abstract and Keywords
+%----------------------------------------------------------------------
+\title[Short Title]{Trabajo Práctico Nro 1: Wiretapping}
+
+% format author this way for journal articles.
+\author[SHORT NAMES]{%
+      Claudio Gauna \small{LU:XXX/XX},
+    \and
+      Christian Bonomi \small{LU:XXX/XX},
+    \and
+      Marcelo Ferranti \small{LU:744/08}
+  }
+
+% format author this way for conference proceeding
+
+% specifiy the journal name
+\journal{Teoría de las comunicaciones, 2016}
+
+% Or, when the paper is a preprint, try this...
+%\journal{IEEE Transactions on Something, 1997, TN\#9999.}
+
+% Or, specify the conference place and date.
+
+% make the title
+\maketitle               
+
+% do the abstract
+\begin{abstract}
+
+En este trabajo nos encargamos de implementar una serie de herramientas
+para capturar los paquetes ARP de ciertas LANs, analizar las capturas
+y tratar de inferir la topología de la red a partir de las mismas.
+ 
+\end{abstract}
+
+% do the keywords
+\begin{keywords}
+ARP, IP, MAC, Ethernet, Wi-Fi, Entropía, Fuente de información,
+\end{keywords}
+
+% start the main text ...
+%----------------------------------------------------------------------
+% SECTION I: Introduction
+%----------------------------------------------------------------------
+
+%\input{introduccion.tex}
+%\input{desarrollo.tex}
+%\input{red_shopping.tex}
+%\input{red_despegar.tex}
+%\input{red_taringa.tex}
+%\input{resultados.tex}
+%\input{conclusiones.tex}
+%\input{anexos.tex}
+
+% do the biliography:
+
+\bibliographystyle{IEEEbib}
+\bibliography{my-bibliography-file}
+
+\begin{thebibliography}{1}
+
+\bibitem{wireshark}
+http://www.wireshark.org/
+\bibitem{scapy}
+http://en.wikipedia.org/wiki/Scapy
+\bibitem{python}
+https://www.python.org/
+\bibitem{ieee}
+https://www.ieee.org
+\end{thebibliography}
+
+
+% where ``my-bibliography-file.bib'' is the name of the file with all the 
+% BibTeX entries.
+
+% do the biographies...
+% If you want a picture with your biography, then specify the name of
+% the postscript file in square brackets. That is, uncomment the
+% following three lines and change the name of "face.ps" to the name of 
+% your file.
+%\begin{biography}[face.ps]{Gregory L. Plett}
+%  A bio with a face...
+%\end{biography}
+
+%----------------------------------------------------------------------
+% FIGURES
+%----------------------------------------------------------------------
+% There are many ways to include figures in the text. We will assume
+% that the figure is some sort of EPS file.
+%
+% The outdated packages epsfig and psfig allow you to insert figures
+% like: \psfig{filename.eps} These should really be done now using the
+% \includegraphics{filename.eps} command.  
+%
+% i.e.,
+%
+% \includegraphics{file.eps}
+%
+% whenever you want to include the EPS file 'file.eps'. There are many
+% options for the includegraphics command, and are outlined in the
+% on-line documentation for the "graphics bundle". Using the options,
+% you can specify the height, total height (height+depth), width, scale,
+% angle, origin, bounding box "bb",view port, and can trim from around
+% the sides of the figure. You can also force LaTeX to clip the EPS file
+% to the bounding box in the file. I find that I often use the scale,
+% trim and clip commands.
+% 
+% \includegraphics[scale=0.6,trim=0 0 0 0,clip=]{file.eps}
+% 
+% which magnifies the graphics by 0.6 (If I create a graphics for an
+% overhead projector transparency, I find that a magnification of 0.6
+% makes it look much better in a paper), trims 0 points off
+% of the left, bottom, right and top, and clips the graphics. If the
+% trim numbers are negative, space is added around the figure. This can
+% be useful to help center the graphics, if the EPS file bounding box is
+% not quite right.
+% 
+% To center the graphics,
+% 
+% \begin{center}
+% \includegraphics...
+% \end{center}
+% 
+% I have not yet written good documentation for this, but another 
+% package which helps in figure management is the package ieeefig.sty,
+% available at: http://www-isl.stanford.edu/people/glp/ieee.shtml
+% Specify:
+% 
+%\usepackage{ieeefig} 
+% 
+% in the preamble, and whenever you want a figure,
+% 
+%\figdef{filename}
+% 
+% where, filename.tex is a LaTeX file which defines what the figure is.
+% It may be as simple as
+% 
+% \inserteps{filename.eps}
+%
+% or
+% \inserteps[includegraphics options]{filename.eps}
+% 
+% or may be a very complicated LaTeX file. 
+
+\end{document}
