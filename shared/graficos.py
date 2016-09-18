@@ -25,7 +25,9 @@ def graficar_histograma(titulo, etiquetaY, etiquetasBarras, tamanosBarras):
     ax.spines['left'].set_color('w')
     ax.spines['right'].set_color('w')
 
-    ind = np.arange(tamanosBarras.size) # las posiciones x de las barras
+    #tamanosBarras = agrupar_valores(tamanosBarras)
+
+    ind = np.arange(len(tamanosBarras)) # las posiciones x de las barras tamanosBarras.size
     anchoBarra = 0.35                         # ancho de las barras
 
     rects1 = ax.bar(ind, tamanosBarras, anchoBarra, color=colorBarras, edgecolor=colorBordeBarras, zorder=3)
@@ -41,10 +43,10 @@ def graficar_histograma(titulo, etiquetaY, etiquetasBarras, tamanosBarras):
     
     ax.set_xticks(ind+anchoBarra)
     xtickNames = ax.set_xticklabels(xTickMarks)
-    plt.setp(xtickNames, rotation='vertical', fontsize=10, weight='bold', color=colorFuente)
-
+    plt.setp(xtickNames, rotation=0, fontsize=10, weight='bold', color=colorFuente)
     
-    return plt
+    
+    return ax.get_figure()
     
 def graficar_comparacion_simbolos_fuente(titulo, etiquetaY, etiquetasBarras, entropia, tamanosBarras):
     
@@ -63,3 +65,11 @@ def graficar_comparacion_simbolos_entropia(fuente):
     etiquetaY ="Informacion"
     etiquetasBarras = fuente.value_counts().index.tolist()  
     graficar_comparacion_simbolos_fuente(titulo, etiquetaY, etiquetasBarras, entropia_fuente(fuente), informacion_simbolos(fuente))
+    
+def graficar_comparacion_simbolos_entropia_agrupados(fuente):   
+    titulo = "Comparacion entre la informacion de los simbolos y la entropia de la fuente"
+    etiquetaY ="Informacion"
+    etiquetasBarras = []    
+    
+    tamanosBarrasAgrupados = set(informacion_simbolos(fuente).values)
+    graficar_comparacion_simbolos_fuente(titulo, etiquetaY, etiquetasBarras, entropia_fuente(fuente), tamanosBarrasAgrupados)
