@@ -35,12 +35,32 @@ for opt, arg in opts:
 	 	outputfile = arg
 	 	packages = readPackagesOnline(sniff_timeout,outputfile)
 
+#Analisis fuente S
+fuente_s = calcularFuenteS(packages)
+
+contadores_s = fuente_s.value_counts()
+print "Cantidad de simbolos S"
+print contadores_s.iloc[:10], "\n"
+
+entropia_s = entropia_fuente(fuente_s)
+print "Entropia Fuente S = ", entropia_s, "\n"
+
+entropia_max_s = entropia_maxima_fuente(fuente_s)
+print "Entropia maxima S = ", entropia_max_s, "\n"
+
+informacion_s = informacion_simbolos(fuente_s)
+print "Informacion simbolos S"
+print informacion_s, "\n"
+
+titulo = "Comparacion entropias y informacion de simbolos de S"
+graficar_comparacion_simbolos_entropia(fuente_s, titulo)
+
 #Analisis fuente S1
-fuente_s1 = calcularFuenteS1(packages)
+fuente_s1, who_has_packages = calcularFuenteS1(packages)
 
 contadores_s1 = fuente_s1.value_counts()
 print "Cantidad de simbolos S1"
-print contadores_s1.iloc[:10], "\n"
+print contadores_s1, "\n"
 
 entropia_s1 = entropia_fuente(fuente_s1)
 print "Entropia Fuente S1 = ", entropia_s1, "\n"
@@ -53,29 +73,9 @@ print "Informacion simbolos S1"
 print informacion_s1, "\n"
 
 titulo = "Comparacion entropias y informacion de simbolos de S1"
-graficar_comparacion_simbolos_entropia(fuente_s1, titulo)
-
-#Analisis fuente S2
-fuente_s2, who_has_packages = calcularFuenteS2(packages)
-
-contadores_s2 = fuente_s2.value_counts()
-print "Cantidad de simbolos S2"
-print contadores_s2, "\n"
-
-entropia_s2 = entropia_fuente(fuente_s2)
-print "Entropia Fuente S2 = ", entropia_s2, "\n"
-
-entropia_max_s2 = entropia_maxima_fuente(fuente_s2)
-print "Entropia maxima S2 = ", entropia_max_s2, "\n"
-
-informacion_s2 = informacion_simbolos(fuente_s2)
-print "Informacion simbolos S2"
-print informacion_s2, "\n"
-
-titulo = "Comparacion entropias y informacion de simbolos de S2"
-graficar_comparacion_simbolos_entropia_agrupados(fuente_s2, titulo)
+graficar_comparacion_simbolos_entropia_agrupados(fuente_s1, titulo)
 print "Nodos distinguidos"
-print nodos_distinguidos(fuente_s2), "\n"
+print nodos_distinguidos(fuente_s1), "\n"
 
 A = crear_grafo_cmin(packages)
 print "Cantidad de Nodos: ", A.number_of_nodes()
