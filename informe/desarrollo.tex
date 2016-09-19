@@ -1,0 +1,15 @@
+\section{Desarrollo}
+
+\PARstart Para analizar la red se van a utilizar dos herramientas. Una que modela los paquetes Ethernet
+capturados como una fuente de información binaria de memoria nula $S$, 
+definiendo el conjunto de símbolos que emite como ${S_{BROADCAST}, S_{UNICAST}}$.
+La segunda herramienta modela una fuente de información de memoria nula $S1$ 
+que emite símbolos que son la IP destino de los paquetes $ARP$ de tipo $Who-has$ capturados.
+Un símbolo de esta fuente será distinguido cuando la información provista
+por el símbolo sea menor que la entropía de la fuente.
+
+\subsection{Descripción y uso de la implementación}
+
+TODO redactar una descripción y forma de uso de los script.
+para citar se puede usar esto: \cite{wireshark}
+Para escribir comandos usar esto: \textit{python entropia.py (file.pcap)}.
