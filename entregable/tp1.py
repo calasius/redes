@@ -12,12 +12,12 @@ try:
 	opts, args = getopt.getopt(argv,"",["offline=","online="])
 except getopt.GetoptError:
 	print 'tp1.py --offline <input pcap file>'
-	print 'tp1.py --online <output pcap file>'
+	print 'sudo tp1.py --online <output pcap file>'
       	sys.exit(2)
 
 if (len(opts) == 0):
 	print 'tp1.py --offline <input pcap file>'
-	print 'tp1.py --online <output pcap file>'
+	print 'sudo tp1.py --online <output pcap file>'
 	sys.exit(2)
 
 sniff_timeout = 10
@@ -26,7 +26,7 @@ packages = None
 for opt, arg in opts:
 	if opt == '-h':
        		print 'tp1.py --offline <input pcap file>'
-	 	print 'tp1.py --online <output pcap file>'
+	 	print 'sudo tp1.py --online <output pcap file>'
          	sys.exit()
       	elif opt in ("--offline"):
          	inputfile = arg
