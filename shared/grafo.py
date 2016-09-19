@@ -8,7 +8,7 @@ from fuente import *
 
 # en cantidadMinimaInteracciones pasamos la cantidad minima 
 # de interacciones que tiene que tener el nodo para ser graficado
-def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15):
+def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15, fileName):
     
     grafo = nx.Graph()
    
@@ -37,6 +37,7 @@ def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15):
     nx.draw_networkx_edge_labels(grafo,pos,edge_labels=labels)
     
     pylab.show()
+    plt.savefig(fileName + ".png", format="PNG")
     return grafo
 
 def crear_grafo(paquetes):
