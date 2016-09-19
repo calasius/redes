@@ -12,7 +12,7 @@ def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15):
     
     grafo = nx.DiGraph()
    
-    fuente, who_has_packages = calcularFuenteS2(paquetes)
+    fuente, who_has_packages = calcularFuenteS1(paquetes)
     contadores = fuente.value_counts()
     etiquetas={}
     counterPerNodeIn = {}
