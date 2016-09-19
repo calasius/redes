@@ -10,7 +10,7 @@ from fuente import *
 # de interacciones que tiene que tener el nodo para ser graficado
 def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15):
     
-    grafo = nx.DiGraph()
+    grafo = nx.Graph()
    
     fuente, who_has_packages = calcularFuenteS2(paquetes)
     contadores = fuente.value_counts()
@@ -29,8 +29,8 @@ def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15):
     plt.figure(figsize=(12,12)) 
 
     pos=nx.spring_layout(grafo)
-    nx.draw_networkx_labels(grafo,pos,etiquetas,node_size=60,font_size=8, font_color="g")
-    nx.draw(grafo,pos,node_size=node_sizes,font_size=8)
+    nx.draw_networkx_labels(grafo,pos,etiquetas,node_size=60,font_size=8, font_color="k")
+    nx.draw(grafo,pos,node_size=node_sizes,font_size=8, node_color='g', alpha=0.3)
 
     #mostramos los pesos de las aristas
     labels = nx.get_edge_attributes(grafo,'weight')
