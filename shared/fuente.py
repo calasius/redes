@@ -17,6 +17,17 @@ def entropia_fuente(fuente):
     counts = fuente.value_counts()
     return entropy(base=2,pk=counts.as_matrix())
 
+def entropia_maxima_fuente(fuente):
+    counts = fuente.value_counts()
+    p = 1 / float(counts.size)
+    return - np.log2(p)
+
+def nodos_distinguidos(fuente):
+    entropia = entropia_fuente(fuente)
+    info = informacion_simbolos(fuente)
+    info2 = info[info < entropia]
+    return info2
+
 def informacion_simbolos(fuente):
     counts = fuente.value_counts()
     total = counts.sum()
