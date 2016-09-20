@@ -2,7 +2,7 @@
 
 Para este experimento se tomo una captura de 20 minutos de la red por cable de despegar.com.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{entropia_red_despegar_s.png}
   \caption{Entropia de la fuente}
@@ -30,7 +30,7 @@ La entropia de la fuente da $0.568266518529$ mucho  menor que la maxima entropia
 El overhead impuesto por la red influencia la entropía de esta fuente.
 Por ejemplo, si hubiese mas mensajes $ARP$ $BROADCAST$ la información del símbolo $S_{BROADCAST}$ bajaría haciendo consecuentemente que la entropía de la fuente $S$ se vea modificada.
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{entropia_red_despegar.png}
   \caption{Entropia de la fuente}
@@ -63,7 +63,7 @@ En comparación con el resto de los mensajes el tráfico $ARP$ es bajo, el total
 Como en nuestra fuente estamos tomando las IPs destino de los paquetes $ARP$ $Who-has$. Esto indíca que estas IPs son muy frecuentes con lo cual se podría pensar en el escenario en que la mayoría de los nodos quiere conocer la MAC del Default Gateway por lo tanto envían tramas $Who-has$ con la dirección destino del mismo. En mi caso particular mi gateway es $10.254.213.254$.
 
 
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{grafo_red_despegar.png}
   \caption{Grafo de la fuente S1}

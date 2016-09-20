@@ -14,7 +14,22 @@ por lo tanto los resultados son un poco distintos.
 
 Como se puede ver en el gráfico, la entropía llega a ser casi máxima (0,999). 
 Esto es debido a que se capturó casi la misma cantida de paquetes UNICAST como de BROADCAST
-por lo tanto un símbolo UNICAST proporciona la misma información que un símbolo BROADCAST 
+por lo tanto un símbolo UNICAST proporciona la misma información que un símbolo BROADCAST.
+
+    \begin{table}[ht]\begin{center}
+      \begin{tabular}{|c|c|}
+      \hline
+      \textbf{Nodo} & \textbf{Información} \\ \hline
+      \texttt{UNICAST}& 0.978789 \\ \hline
+      \texttt{BROADCAST}& 1.021528 \\ \hline
+      \end{tabular}
+      \caption{Información de los símbolos de S}
+      \label{info-simbolos}
+    \end{center}\end{table}
+    
+Una razón que podría explicar este fenómeno es que la asignación IP-Mac sea estática ó al menos estática en la mayoría los host.
+Eso reduciría la cantidad de paquetes BROADCAST en la red, ya que la mayoría del host enviarían sólo mensajes UNICAST dado 
+que conocen la dirección MAC de los demás.
 
 \begin{figure}[H]
   \centering
