@@ -1,8 +1,17 @@
 \section{Conclusiones}
 
-Escuchar y analizar el tráfico ARP de una red a la cual uno esta conectado, 
-es una forma efectiva de conocer la topología de la misma hasta el primer salto del router.
-Mediante el cálculo de la entropía de la red y la información de las direcciónes de los hosts, se puede obtener dicho resultado.\\
-En los casos estudiados, pudimos observar que los simbolos con información menor a la entropía se corresponden con el conjunto de simbolos distinguidos, entre los cuales se encuentran los gateways de la red, pero este metodo no es preciso en el sentido que da otros nodos que no son gateways.\\
-Pensamos que si tendriamos mas redes con informacion precisa de los gateways, podriamos encontrar un rango de entropia que ajuste mejor para detectar los gateways, pero no contamos con tal información.\\
-Tambien vimos que para redes chicas pasa que el nodo distinguido puede no dar el gateway. Esto paso analizando las redes de nuestras casas. Tambien coincide que la fuente s1 tiene entropia casi maxima, lo cual indica que hay mucho desorden. Ahora a medida que la redes crecen en tamaño vemos que a entropia baja y se distinguen mejor los gateways. 
+Escuchar y analizar el tráfico ARP de una red a la cual uno esta conectado es una forma efectiva
+de conocer la topología de la misma hasta el primer salto del router. Mediante el cálculo de la
+entropía de la red y la información de las direcciónes de los hosts se puede obtener dicho resultado.
+
+En los casos estudiados, pudimos observar que los s\'imbolos con información menor a la entropía
+se corresponden con el conjunto de simbolos distinguidos, entre los cuales se encuentran los
+gateways de la red. Sin embargo, este metodo no es preciso en el sentido que da otros nodos que
+no son gateways.
+
+Pensamos que de contar con redes con informaci\'on precisa de los gateways, podr\'iamos intentar
+encontrar un mejor rango de la relaci\'on entre la entrop\'ia y la informaci\'on de los s\'imbolos
+que permita detectar los gateways con mayor precisi\'on.
+
+Por otro lado, podemos intuir que a medida que la redes crecen en tamaño la entrop\'ia tiende a
+disminuir y permite as\'i distinguir mejor los gateways. 
