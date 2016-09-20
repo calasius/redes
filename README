@@ -1,0 +1,21 @@
+En la carpeta shared estan los siguientes archivos:
+
+• fuente.py. Tiene los metodos para crear las fuentes a
+partir de los paquetes. Tambi ́en tiene funciones para
+calcular la entropia, entropia maxima e informacion
+de los simbolos.
+• grafo.py. Tiene los metodos para crear y graficar el
+grafo de la red.
+• graficos.py. Tiene los metodos para graficar los his-
+togramas de los simbolos de una fuente.
+• reader.py. Tiene los metodos para hacer sniff online y
+offline.
+
+En la carpeta entregable esta elarchivo tp1.py que es el
+script principal que tiene todo el codigo para generar las
+fuentes S y S1 con sus respectivos graficos y la imagen
+del grafo de la red.
+
+La forma de uso es la siguiente:
+sudo python tp1.py –online file.pcap.
+python tp1.py –offline file.pcap.
