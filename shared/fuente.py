@@ -37,11 +37,11 @@ def informacion_simbolos(fuente):
 def simbolo_s2(package):
     return package.pdst
 
-def calcularFuenteS1(packages):
+def calcularFuenteS(packages):
     fuente_s1 = pd.Series([simbolo_s(p) for p in packages])
     return fuente_s1
 
-def calcularFuenteS2(packages):
+def calcularFuenteS1(packages):
     who_has_packages = filter(lambda p : p.haslayer(sc.ARP) and p["ARP"].op == ARP_OP_WHO_HAS,packages)
     fuente_s2 = pd.Series([simbolo_s2(p) for p in who_has_packages])
     return fuente_s2, who_has_packages

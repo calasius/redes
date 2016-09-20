@@ -8,11 +8,11 @@ from fuente import *
 
 # en cantidadMinimaInteracciones pasamos la cantidad minima 
 # de interacciones que tiene que tener el nodo para ser graficado
-def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15, fileName):
+def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15, fileName="grafo.png"):
     
     grafo = nx.Graph()
    
-    fuente, who_has_packages = calcularFuenteS2(paquetes)
+    fuente, who_has_packages = calcularFuenteS1(paquetes)
     contadores = fuente.value_counts()
     etiquetas={}
     counterPerNodeIn = {}
@@ -30,14 +30,15 @@ def crear_grafo_cmin(paquetes, cMinIntNodo=0, maxPerNode=15, fileName):
 
     pos=nx.spring_layout(grafo)
     nx.draw_networkx_labels(grafo,pos,etiquetas,node_size=60,font_size=8, font_color="k")
-    nx.draw(grafo,pos,node_size=node_sizes,font_size=8, node_color='g', alpha=0.3)
+    nx.draw(grafo,pos,node_size=node_sizes,font_size=8, node_color='r', alpha=0.5)
 
     #mostramos los pesos de las aristas
     labels = nx.get_edge_attributes(grafo,'weight')
     nx.draw_networkx_edge_labels(grafo,pos,edge_labels=labels)
     
+    pylab.savefig(fileName)
     pylab.show()
-    plt.savefig(fileName + ".png", format="PNG")
+    
     return grafo
 
 def crear_grafo(paquetes):
