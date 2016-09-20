@@ -1,4 +1,4 @@
-\section{Red doméstica}
+\section{Red laboratorio}
 
 Para este experimento se tomo una captura de 30 minutos de la red Wi-Fi de los labos de la facultad.
 
@@ -36,7 +36,7 @@ Por ejemplo, si hubiese mas mensajes $ARP$ $BROADCAST$ la información del símb
 \begin{figure}[h]
   \centering
     \includegraphics[width=0.45\textwidth]{grafico2-red-labos.png}
-  \caption{Entropia de la fuente}
+  \caption{Entropia de la fuente S1}
   \label{entropia-s1}
 \end{figure}
 En este gráfico agrupamos la información puesto que había demasiados símbolos.
@@ -59,3 +59,11 @@ En comparación con el resto de los mensajes el tráfico $ARP$ es bajo, sólo el
 Como en nuestra fuente estamos tomando las IPs destino de los paquetes $ARP$ $Who-has$. Esto indíca que estas IPs son muy frecuentes con lo cual se podría pensar en el escenario en que la mayoría de los nodos quiere conocer la MAC del Default Gateway por lo tanto envían tramas $Who-has$ con la dirección destino del mismo.
 
 Por lo tanto bajo ese escenario estos cuatro nodos distinguidos podrían ser Default Gateway/s. 
+
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.45\textwidth]{grafo-red-labos-destacados.png}
+  \caption{Grafo de la fuente S1}
+  \label{grafo-s1}
+\end{figure}
