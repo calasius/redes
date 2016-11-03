@@ -1,0 +1,7 @@
+.ipynb_checkpoints
+*.pyc
+*.pcap
+*.aux
+*.log
+*.dvi
+*.pdf
