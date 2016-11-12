@@ -1,0 +1,28 @@
+\section{Desarrollo}
+
+\PARstart Para analizar la red se van a utilizar dos herramientas. Una que modela los paquetes Ethernet
+capturados como una fuente de información binaria de memoria nula $S$, 
+definiendo el conjunto de símbolos que emite como ${S_{BROADCAST}, S_{UNICAST}}$.
+La segunda herramienta modela una fuente de información de memoria nula $S1$ 
+que emite símbolos que son la IP destino de los paquetes $ARP$ de tipo $Who-has$ capturados. La herramienta que modela esta fuente no tiene en cuenta los paquetes ARP gratuitos, ya que estos no son necesarios por el standar de ARP (RFC 826), pero si pueden ser utilizados en otros casos, para detectar conflictos de ip, para que otras maquinas hagan un update de su tabla, o cuando se levanta una interfaz de red. Al sacar estos paquetes podemos focalizarnos en analizar los paquetes $ARP$ $Who-has$ que efectivamente estan preguntado por una ip desconocida.
+Un símbolo de esta fuente será distinguido cuando la información provista
+por el símbolo sea menor que la entropía de la fuente.
+
+\subsection{Descripción y uso de la implementación} 
+El código esta en dos carpetas $shared$ y $entregable$.\\
+
+En la carpeta $shared$ estan los siguientes archivos:
+
+\begin{itemize}
+\item fuente.py. Tiene los metodos para crear las fuentes a partir de los paquetes. También tiene funciones para calcular la entropia, entropia maxima e informacion de los simbolos.
+\item grafo.py. Tiene los metodos para crear y graficar el grafo de la red.
+\item graficos.py. Tiene los metodos para graficar los histogramas de los simbolos de una fuente.
+\item reader.py. Tiene los metodos para hacer sniff online y offline.
+\end{itemize}
+
+En la carpeta $entregable$ esta elarchivo $tp1.py$ que es el script principal que tiene todo el codigo para generar las fuentes $S$ y $S1$ con sus respectivos graficos y la imagen del grafo de la red.\\
+
+La forma de uso es la siguiente:
+
+\textit{sudo python tp1.py --online file.pcap}.\\
+\textit{python tp1.py --offline file.pcap}.
