@@ -29,7 +29,7 @@
 %----------------------------------------------------------------------
 % Title Information, Abstract and Keywords
 %----------------------------------------------------------------------
-\title[Short Title]{Trabajo Práctico Nro 1: Wiretapping}
+\title[Short Title]{Trabajo Práctico Nro 2: Rutas en Internet}
 
 % format author this way for journal articles.
 \author[SHORT NAMES]{%
@@ -57,16 +57,14 @@
 
 % do the abstract
 \begin{abstract}
-
-En este trabajo nos encargamos de implementar una serie de herramientas
-para capturar los paquetes ARP de ciertas LANs, analizar las capturas
-y tratar de inferir la topología de la red a partir de las mismas.
- 
+Para este trabajo, implementamos una herramienta que envía paquetes ICMP (traceroute) a tres direcciones web diferentes, 
+y luego arroja para diferentes TTLs los tiempos de RTT. Se van a enviar paquetes con diferentes TTL y ver cómo se comporta 
+los tiempos y analizar las respuestas recibidas por nuestra herramienta
 \end{abstract}
 
 % do the keywords
 \begin{keywords}
-ARP, IP, MAC, Ethernet, Wi-Fi, Entropía, Fuente de información,
+TTL, RTT, ICMP, Nivel de Red, Scapy, Cimbala, Traceroute
 \end{keywords}
 
 % start the main text ...
@@ -75,9 +73,9 @@ ARP, IP, MAC, Ethernet, Wi-Fi, Entropía, Fuente de información,
 %----------------------------------------------------------------------
 
 \input{introduccion.tex}
-\input{desarrollo.tex}
-\input{resultados.tex}
-\input{conclusiones.tex}
+% \input{desarrollo.tex}
+% \input{resultados.tex}
+% \input{conclusiones.tex}
 %\input{anexos.tex}
 
 % do the biliography:

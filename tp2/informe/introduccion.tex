@@ -1,2 +1,9 @@
 \section{Introducción}
-
+\PARstart El objetivo principal de este trabajo práctico es averiguar de qué manera viaja un paquete 
+que se envía desde un host hacia otro que está ubicado a una distancia geográfica considerable a través de Internet, que corresponde a la capa de Red dentro del modelo OSI.
+Sabemos que cuando un host manda un paquete, éste último pasa a través de diferentes redes. Para lograr esto, vamos a crear una herramienta en Scapy que envía paquetes ICMP
+ a una cierta dirección ip/web (de tres universidades ubicadas en el otro extremo del globo). 
+Para dicho paquete, vamos a modificar incrementalmente el campo TTL (Time To Live). 
+Éste es un campo que indica cuántos saltos entre red y red puede dar a lo sumo. Cuando no llega a destino debido a que no le alcanzó el TTL, 
+retorna (entre otras cosas) con la cantidad de milisegundos que le tomó ir hasta donde pudo llegar y volver al host origen,
+que no es otra cosa que el RTT (Round Trip Time).
