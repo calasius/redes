@@ -1,0 +1,8 @@
+\section{Métodos y condiciones}
+\PARstart La implementaci\'on de la herramienta que permite realizar un \verb+traceroute+ se desarrollo de la siguiete forma:
+
+El calculo del $RTT$ se implemento tomando el tiempo antes de enviar el paquete $ICMP$, enviando un paquete $ICMP$, y cuando llega la respuesta $ICMP$ de tipo $time exceded$ tomando el tiempo. Luego al tiempo final se le resta el inicial y ese es el $RTT$ entre saltos. 
+
+Debido a que el $RTT$ calculado de esta forma podria ser impresiso por diversos motivos, por ejemplo el paquete $ICMP$ de tipo $time exceded$ podria tardar mas tiempo del real porque en un momento dado hay mucha congestion en la red. Se decidio Enviar varios paquetes y realizar un promedio de los $RTT$ obtenidos por cada envio, obteniendo asi una muestra mas estable.
+
+Para el c\'alculo de los outliers se normalizaron los datos y se compararon con los valores de la tabla $thompson$ $\tau$ modificada de acuerdo al $n$ de la muestra. 
