@@ -1,2 +1,16 @@
 \section{Conclusiones}
+\PARstart Parte integral de este trabajo fue comprender la manera por la cual se estructura la red de Internet. 
+En el transcurso de los experimentos logramos ver de manera más concreta cómo funciona una red real y sus diferencias
+con las redes planteadas en la práctica, que son de una índole más teórica. 
+En Internet, si bien teórica puede ocurrir que un paquete pase por distintos caminos para llegar a un destino, 
+en la práctica no es tanto así debido a que en los experimentos realizados obtuvimos pocas variaciones en los resultados.
 
+También es sorpresivo cómo no todos los routers no funcionan de la misma manera en cuanto a la forma de responder
+a un mensaje de "no recibido" de un paquete ICMP. Inicialmente, habíamos esperado que en cierta forma todos nos respondieran
+si es que no llegó el paquete, pero sin embargo, esto no ocurrió.
+
+El camino geográfico trazado por el recorrido de los paquetes indican que hay 2 rutas comunes hacia Europa. Por un lado los paquetes 
+con destino Europa Oriental y Asia central no pasan por Estados Unidos, sino que van directamente a un nodo en Italia 
+para luego hacer los saltos correspondientes. Por el otro lado para llegar a destinos que se encuentran en centro y norte de Europa
+(Alemania, UK, Islandia) los paquetes primero pasan por Estados Unidos para luego hacer el salto hacia el continente Europeo.
+Finalmente el trazado por el recorrido de los paquetes con destino a Australia tambien pasa por Estados Unidos.
