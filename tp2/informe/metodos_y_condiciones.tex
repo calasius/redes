@@ -5,4 +5,13 @@ El calculo del $RTT$ se implemento tomando el tiempo antes de enviar el paquete 
 
 Debido a que el $RTT$ calculado de esta forma podria ser impresiso por diversos motivos, por ejemplo el paquete $ICMP$ de tipo $time exceded$ podria tardar mas tiempo del real porque en un momento dado hay mucha congestion en la red. Se decidio Enviar varios paquetes y realizar un promedio de los $RTT$ obtenidos por cada envio, obteniendo asi una muestra mas estable.
 
-Para el c\'alculo de los outliers se normalizaron los datos y se compararon con los valores de la tabla $thompson$ $\tau$ modificada de acuerdo al $n$ de la muestra. 
+Para el c\'alculo de los outliers se normalizaron los datos y se compararon con los valores de la tabla $thompson$ $\tau$ modificada de acuerdo al $n$ de la muestra según la siguente fórmula.
+
+\begin{equation}
+  \tau = \cfrac{t_{\cfrac{\alpha}{2}} . (n - 1)}{\sqrt{n}\sqrt{n-2+t_{\cfrac{\alpha}{2}^2}}}
+\end{equation}
+
+\begin{itemize}
+\item n es el numero de datos de la muestra
+\item $t_{\cfrac{\alpha}{2}}$ es el valor crítico de t-student, donde $\alpha$ = 0.05 y df = n-2.
+\end{itemize}
