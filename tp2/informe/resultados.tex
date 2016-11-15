@@ -248,6 +248,33 @@ www.fu-berlin.de & 9  & 67.17.94.249 & US &  2.985575 \\
 
 
 \subsection{Servidor www.kstu.kz}
+\begin{center}
+\captionof{table}{rtt promedios entre saltos para www.kstu.kz}
+\begin{tabular}{llllr}
+\toprule
+            &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+www.kstu.kz & 1  & empty & empty &  0.000000 \\
+            & 2  & empty & empty &  0.000000 \\
+            & 3  & empty & empty &  0.000000 \\
+            & 4  & empty & empty &  0.000000 \\
+            & 5  & 200.89.161.145 & AR &  0.078752 \\
+            & 6  & 200.89.165.150 & AR &  0.008279 \\
+            & 7  & 185.70.203.20 & IT &  0.004113 \\
+            & 8  & 195.22.214.131 & IT&  0.249391 \\
+            & 9  & 195.22.211.109 & IT&  0.013956 \\
+            & 10 & empty & empty &  0.000000 \\
+            & 11 & 195.190.98.142 & RU &  0.081555 \\
+            & 12 & 46.227.189.38 & KZ &  0.003893 \\
+            &    & empty & empty &  0.000000 \\
+            & 13 & 80.241.35.198 & KZ &  0.014117 \\
+            & 14 & 85.29.137.2 & KZ &  0.068915 \\
+            & 15 & 85.29.137.233 & KZ &  0.005942 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
 
 \begin{center}
 \begin{tabular}{p{6.5cm}r}
@@ -265,6 +292,19 @@ Cantidad de outliers según el método de Cimbala: & \textbf{1} \\ \\
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para www.kstu.kz}
+\begin{tabular}{llllr}
+\toprule
+            &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+www.kstu.kz & 8  & 195.22.214.131 & IT &  3.342247 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
 
 \begin{figure}[H]
   \centering
@@ -284,6 +324,46 @@ Cantidad de outliers según el método de Cimbala: & \textbf{1} \\ \\
 
 
 \subsection{Servidor www.uq.edu.au}
+\begin{center}
+\captionof{table}{rtt promedios entre saltos para www.uq.edu.au}
+\begin{tabular}{llllr}
+\toprule
+              &    &                &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+www.uq.edu.au & 1  & empty & empty &  0.000000 \\
+              & 2  & empty & empty &  0.000000 \\
+              & 3  & empty & empty &  0.000000 \\
+              & 4  & empty & empty &  0.000000 \\
+              & 5  & 200.89.161.81 & AR &  0.069609 \\
+              & 6  & 200.89.165.1 & AR &  0.005534 \\
+              & 7  & 200.89.165.250 & AR &  0.007442 \\
+              & 8  & empty & empty &  0.000000 \\
+              & 9  & 67.17.94.249 & US &  0.121653 \\
+              & 10 & empty & empty &  0.000000 \\
+              & 11 & empty & empty &  0.000000 \\
+              & 12 & 4.68.127.54 & US &  0.011813 \\
+              & 13 & 129.250.4.250 & US &  0.008370 \\
+              & 14 & 129.250.2.219 & US &  0.027036 \\
+              & 15 & 129.250.7.69 & US &  0.015778 \\
+              & 16 & 129.250.3.123 & US &  0.008138 \\
+              & 17 & 204.1.253.166 & US &  0.028387 \\
+              & 18 & 202.158.194.172 & AU &  0.139608 \\
+              & 19 & 113.197.15.68 & AU &  0.002438 \\
+              & 20 & 113.197.15.66 & AU &  0.006682 \\
+              & 21 & 113.197.15.152 & AU &  0.023330 \\
+              & 22 & 113.197.15.4 & AU &  0.011024 \\
+              & 23 & 113.197.15.7 & AU &  0.015266 \\
+              & 24 & 113.197.15.34 & AU &  0.003360 \\
+              & 25 & 138.44.129.46 & AU &  0.009573 \\
+              & 26 & 130.102.159.1 & AU &  0.021310 \\
+              & 27 & 130.102.0.242 & AU &  0.007072 \\
+              & 28 & 130.102.82.63 & AU &  0.005245 \\
+              & 29 & 130.102.131.70 & AU &  0.004558 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
 
 \begin{center}
 \begin{tabular}{p{6.5cm}r}
@@ -294,14 +374,26 @@ Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
 
-
-
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{histogramas_rtt/www-uq-edu-au.png}
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para www.uq.edu.au}
+\begin{tabular}{llllr}
+\toprule
+              &    &                &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+www.uq.edu.au & 9  & 67.17.94.249 & US &  3.018553 \\
+              & 18 & 202.158.194.172 & AU &  3.546898 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
 
 \begin{figure}[H]
   \centering
@@ -324,6 +416,38 @@ Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \subsection{Servidor auckland.ac.nz}
 
 \begin{center}
+\captionof{table}{rtt promedios entre saltos para auckland.ac.nz}
+\begin{tabular}{llllr}
+\toprule
+               &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+auckland.ac.nz & 1  & empty & empty &  0.000000 \\
+               & 2  & empty & empty &  0.000000 \\
+               & 3  & empty & empty &  0.000000 \\
+               & 4  & empty & empty &  0.000000 \\
+               & 5  & 200.89.161.77 & AR &  0.076270 \\
+               & 6  & 200.89.165.197 & AR &  0.009660 \\
+               & 7  & 200.89.165.222 & AR &  0.010555 \\
+               & 8  & empty & empty &  0.000000 \\
+               & 9  & 67.17.94.249 & US &  0.116990 \\
+               & 10 & empty & empty &  0.000000 \\
+               & 11 & empty & empty &  0.000000 \\
+               & 12 & 4.68.127.54 & US &  0.008144 \\
+               & 13 & 129.250.4.250 & US &  0.008747 \\
+               & 14 & 129.250.2.219 & US &  0.026343 \\
+               & 15 & 129.250.7.69 & US &  0.013037 \\
+               & 16 & 129.250.3.123 & US &  0.005543 \\
+               & 17 & 204.1.253.166 & US &  0.045089 \\
+               & 18 & 202.158.194.172 & AU &  0.120172 \\
+               & 19 & 182.255.119.139 & AU &  0.014907 \\
+               & 20 & 210.7.39.251 & NZ &  0.014551 \\
+               & 21 & 210.7.39.178 & NZ &  0.004857 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{center}
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{ saltos} \\ \\
@@ -338,6 +462,20 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para auckland.ac.nz}
+\begin{tabular}{llllr}
+\toprule
+               &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+auckland.ac.nz & 9  & 67.17.94.249 & US &  3.078891 \\
+               & 18 & 202.158.194.172 & AU &  3.176235 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
 
 \begin{figure}[H]
   \centering
@@ -359,6 +497,41 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
 \subsection{Servidor invertisuniversity.ac.in}
 
 \begin{center}
+\captionof{table}{rtt promedios entre saltos para invertisuniversity.ac.in}
+\begin{tabular}{llllr}
+\toprule
+                         &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+invertisuniversity.ac.in & 1  & empty & empty &  0.000000 \\
+                         & 2  & empty & empty &  0.000000 \\
+                         & 3  & empty & empty &  0.000000 \\
+                         & 4  & empty & empty &  0.000000 \\
+                         & 5  & 200.89.161.145 & AR &  0.091815 \\
+                         & 6  & 200.89.165.150 & AR&  0.013239 \\
+                         & 7  & 185.70.203.20 & IT &  0.016529 \\
+                         & 8  & 195.22.209.63 & IT &  0.227124 \\
+                         & 9  & 149.3.183.130 & IT &  0.018799 \\
+                         & 10 & empty & empty &  0.000000 \\
+                         & 11 & 182.79.217.34 & IN &  0.131296 \\
+                         & 12 & 202.56.223.241 & IN &  0.022426 \\
+                         &    & empty & empty &  0.000000 \\
+                         & 13 & 182.79.254.197 & IN &  0.019971 \\
+                         & 14 & 125.16.26.235 & IN &  0.007836 \\
+                         & 15 & 103.233.124.0 & IN &  0.026050 \\
+                         & 16 & 103.233.124.254 & IN &  0.027040 \\
+                         & 17 & 103.233.126.5 & IN &  0.017655 \\
+                         &    & empty & empty &  0.000000 \\
+                         & 18 & 103.233.126.17 & IN &  0.015503 \\
+                         & 19 & 103.233.127.47 & IN &  0.011093 \\
+                         & 20 & 103.241.180.132 & IN &  0.016200 \\
+                         & 21 & 103.241.146.22 & IN &  0.012582 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
+
+\begin{center}
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{ saltos} \\ \\
@@ -373,6 +546,20 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para invertisuniversity.ac.in}
+\begin{tabular}{llllr}
+\toprule
+                         &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+invertisuniversity.ac.in & 8  & 195.22.209.63 & IT &  3.734289 \\
+                         & 11 & 182.79.217.34 & IN &  1.924863 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
 
 \begin{figure}[H]
   \centering
@@ -394,6 +581,39 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
 \subsection{Servidor www.uae.ma}
 
 \begin{center}
+\captionof{table}{rtt promedios entre saltos para www.uae.ma}
+\begin{tabular}{llllr}
+\toprule
+           &    &              &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+www.uae.ma & 1  & empty & empty &  0.000000 \\
+           & 2  & empty & empty &  0.000000 \\
+           & 3  & empty & empty &  0.000000 \\
+           & 4  & empty & empty &  0.000000 \\
+           & 5  & 200.89.161.129 & AR &  0.074943 \\
+           & 6  & 200.89.165.5 & AR &  0.004708 \\
+           & 7  & 200.89.165.250 & AR &  0.006304 \\
+           & 8  & 195.22.220.102 & IT &  0.005447 \\
+           & 9  & 195.22.219.3 & IT &  0.035226 \\
+           & 10 &              & IT &  0.010738 \\
+           & 11 & 149.3.181.65 & IT &  0.005863 \\
+           & 12 & 129.250.2.227 & US &  0.113837 \\
+           & 13 & 129.250.2.19 & US &  0.077303 \\
+           & 14 & 129.250.4.141 & US &  0.008594 \\
+           & 15 & 129.250.6.8 & US &  0.001446 \\
+           & 16 & 81.25.207.146 & GB &  0.006293 \\
+           & 17 & 50.97.18.211 & US &  0.009113 \\
+           & 18 & 50.97.18.249 & US &  0.009749 \\
+           & 19 & 159.253.158.131 & NL &  0.004349 \\
+           &    & empty & empty &  0.000000 \\
+           & 20 & 159.253.148.195 & NL &  0.006204 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
+
+\begin{center}
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{25\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{15 saltos} \\ \\
@@ -409,6 +629,20 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para www.uae.ma}
+\begin{tabular}{llllr}
+\toprule
+           &    &              &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+www.uae.ma & 12 & 129.250.2.227 & US &  3.065712 \\
+           & 13 & 129.250.2.19 & US &  1.895807 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
 
 \begin{figure}[H]
   \centering
@@ -430,6 +664,42 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
 \subsection{Servidor bifrost.is}
 
 \begin{center}
+\captionof{table}{rtt promedios entre saltos para bifrost.is}
+\begin{tabular}{llllr}
+\toprule
+           &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+bifrost.is & 1  & empty & empty &  0.000000 \\
+           & 2  & empty & empty &  0.000000 \\
+           & 3  & empty & empty &  0.000000 \\
+           & 4  & empty & empty &  0.000000 \\
+           & 5  & 200.89.161.133 & AR &  0.077077 \\
+           & 6  & 200.89.165.130 & AR &  0.004429 \\
+           & 7  & 200.89.165.222 & AR &  0.006434 \\
+           & 8  & 185.70.203.32 & IT &  0.003869 \\
+           & 9  & 89.221.41.171 & IT &  0.128319 \\
+           & 10 &               & IT &  0.006943 \\
+           & 11 & 154.54.9.17 & US &  0.005663 \\
+           & 12 & 154.54.24.233 & US &  0.003648 \\
+           & 13 & 154.54.24.197 & US &  0.011277 \\
+           & 14 & 154.54.24.221 & US &  0.009189 \\
+           & 15 & 154.54.40.109 & US &  0.007895 \\
+           & 16 & 154.54.42.86 & US &  0.091001 \\
+           & 17 & 154.54.57.162 & US &  0.008998 \\
+           & 19 & 149.6.98.110 & US &  0.013127 \\
+           & 20 & 31.15.113.2 & IS &  0.013911 \\
+           & 21 & 31.15.113.1 & IS &  0.008186 \\
+           & 22 & 31.15.115.41 & IS &  0.007656 \\
+           & 23 & 176.10.35.233 & IS &  0.031531 \\
+           & 24 & 176.10.35.234 & IS &  0.004080 \\
+           & 25 & 185.118.33.147 & IS &  0.007998 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
+
+\begin{center}
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{17\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{20 saltos} \\ \\
@@ -444,6 +714,20 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para bifrost.is}
+\begin{tabular}{llllr}
+\toprule
+           &    &               &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+bifrost.is & 9  & 89.221.41.171 & IT &  3.369697 \\
+           & 16 & 154.54.42.86 & US &  2.221474 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
 
 \begin{figure}[H]
   \centering
@@ -465,6 +749,37 @@ Cantidad de outliers según el método de Cimbala: & \textbf{} \\ \\
 \subsection{Servidor birmingham.ac.uk}
 
 \begin{center}
+\captionof{table}{rtt promedios entre saltos para birmingham.ac.uk}
+\begin{tabular}{llllr}
+\toprule
+                 &    &             &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+birmingham.ac.uk & 1  & empty & empty &  0.000000 \\
+                 & 2  & empty & empty &  0.000000 \\
+                 & 3  & empty & empty &  0.000000 \\
+                 & 4  & empty & empty &  0.000000 \\
+                 & 5  & 200.89.161.85 & AR &  0.074961 \\
+                 & 6  & 200.89.165.1 & AR &  0.004908 \\
+                 & 7  & 200.89.165.250 & AR &  0.007433 \\
+                 & 8  & empty & empty &  0.000000 \\
+                 & 9  & 67.17.99.233 & US &  0.124818 \\
+                 & 10 & empty & empty &  0.000000 \\
+                 & 11 & empty & empty &  0.000000 \\
+                 & 12 & 212.187.139.166 & GB &  0.090183 \\
+                 & 13 & 146.97.33.2 & GB &  0.006402 \\
+                 & 14 & 146.97.33.22 & GB &  0.006861 \\
+                 & 15 & 146.97.37.154 & GB &  0.010930 \\
+                 & 16 & 193.62.80.154 & GB &  0.005032 \\
+                 & 17 & 193.62.80.174 & GB &  0.005705 \\
+                 & 18 & 193.63.208.142 & GB &  0.007928 \\
+                 & 19 & empty & empty &  0.000000 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
+
+\begin{center}
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{62\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{11 saltos} \\ \\
@@ -479,6 +794,21 @@ Cantidad de outliers según el método de Cimbala: & \textbf{3} \\ \\
   \caption{RTT entre saltos}
   \label{entropia-s}
 \end{figure}
+
+\begin{center}
+\captionof{table}{Outliers para birmingham.ac.uk}
+\begin{tabular}{llllr}
+\toprule
+                 &    &             &    &       rtt \\
+host & ttl & ip & cc &           \\
+\midrule
+birmingham.ac.uk & 5  & 200.89.161.85 & AR &  2.084216 \\
+                 & 9  & 67.17.99.233 & US &  3.732069 \\
+                 & 12 & 212.187.139.166 & GB &  2.587332 \\
+\bottomrule
+\end{tabular}
+
+\end{center}
 
 \begin{figure}[H]
   \centering
