@@ -4,7 +4,9 @@ A lo largo de la ejecución de los distintos experimentos se observaron las sigu
 
 También pueden producirse \emph{False Round-Trip Times}, pero para tratar con esta anomalía se toman varias muestras de RTT entre dos saltos consecutivos de la ruta y se promedian, obteniendo así un RTT promedio en el cual se diluye esta anomalía.
 
-Viendo la tabla Thompson modificada vemos que para $n$=11 el valor de corte es 1.8153 y para $n$=30 el valor de corte es 1.9114 (nunca vamos a tener mas de 30 saltos), viendo los gráficos de los experimentos realizados si se eligiera un valor fijo para la condición de corte la cantidad de enlaces intercontinentales no se vería afectada.
+En cuanto a la longitud de la ruta, en los experimentos no apreciamos una que haya un mayor desempeño en el calculo de los enlaces intercontinentales.
+
+Viendo la tabla Thompson modificada vemos que para $n$=11 el valor de corte es 1.8153 y para $n$=30 el valor de corte es 1.9114 (nunca vamos a tener mas de 30 saltos), viendo los gráficos de los experimentos realizados si se eligiera un valor fijo para la condición de corte la cantidad de enlaces intercontinentales no se vería afectada. 
 
 Si bien la teoría indica que debido a un balanceo de carga los paquetes pueden tomar una ruta diferente, no pudimos observar esta anomalía
 con nuestros experimentos. Es probable que en otro escenario se pueda llegar a observar	este comportamiento, probablemente en servidores
