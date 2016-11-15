@@ -1,0 +1,11 @@
+\section{Analisis global}
+A lo largo de la ejecución de los distintos experimentos se observaron las siguientes anomalias que se mencionan en el documento Traceroute Anomalies:
+\emph{Missing Hops}, \emph{Missing Destination} y \emph{Loops and Circles}.
+
+También pueden producirse \emph{False Round-Trip Times}, pero para tratar con esta anomalía se toman varias muestras de RTT entre dos saltos consecutivos de la ruta y se promedian, obteniendo así un RTT promedio en el cual se diluye esta anomalía.
+
+\subsection{Missing Hops}
+
+Si bien la teoría indica que debido a un balanceo de carga los paquetes pueden tomar una ruta diferente, no pudimos observar esta anomalía
+con nuestros experimentos. Es probable que en otro escenario se pueda llegar a observar	este comportamiento, probablemente en servidores
+que posean mucho trafico como puede ser Google ó Amazon, entre otros.
