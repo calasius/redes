@@ -44,7 +44,7 @@ Cantidad de outliers según el método de Cimbala: & \textbf{1} \\ \\
 \end{tabular}
 \end{center}
 
-Los outliers se corresponden con los enlaces intercontinentales.
+El salto que identificamos como outlier es AR-EU con ttl 8-9, pero tenemos un falso negativo EU-SE ttl 12-14. Vemos que el valor rtt es $0.08$ un valor relativamente grande, pero que el metodo no logra identificar como outlier.
 
 
 \begin{figure}[H]
@@ -129,7 +129,7 @@ Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
 
-No se corresponden los enlaces con los outliers.
+Los outliers identifican los saltos intercontinentales AR-EU ttl 7-9 y EU-SE ttl 12-14. No tenemos falsos negativos ni positivos.
 
 \begin{figure}[H]
   \centering
@@ -211,7 +211,7 @@ Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
 
-No se corresponden los enlaces con los outliers.
+Los outliers identifican los saltos intercontinentales AR-EU ttl 7-9 y EU-DE ttl 9-11. No tenemos falsos negativos ni positivos.
 
 \begin{figure}[H]
   \centering
@@ -291,6 +291,7 @@ Cantidad de outliers según el método de Cimbala: & \textbf{1} \\ \\
 \end{tabular}
 \end{center}
 
+Los outliers identifican los saltos intercontinentales IT-IT ttl 7-8. Esto es un falso positivo. Vemos que AR-IT ttl 6-7 hay un valor muy bajo, pensamos que la ip ttl = 7 185.70.203.20 deberia estar en AR, pero distintos sitios la ubican en IT. No entendemos que problema tenemos aca.
 
 \begin{figure}[H]
   \centering
@@ -377,10 +378,13 @@ www.uq.edu.au & 1  & empty & empty &  0.000000 \\
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{24\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{22 saltos} \\ \\
-Cantidad de enlaces intercontinentales: & \textbf{1} \\ \\
+Cantidad de enlaces intercontinentales: & \textbf{2} \\ \\
 Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
+
+Los outliers identifican los saltos intercontinentales AR-US ttl 7-9 y US-AU ttl 17-18. No tenemos falsos negativos ni positivos.
+
 
 \begin{figure}[H]
   \centering
@@ -407,7 +411,7 @@ www.uq.edu.au & 9  & 67.17.94.249 & US &  3.018553 \\
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{histogramas_thompson/www-uq-edu-au.png}
-  \caption{RTTs Normailzados comparados con el valor Thompson}
+  \caption{RTTs Normalizados comparados con el valor Thompson}
   \label{entropia-s}
 \end{figure}
 
@@ -461,10 +465,12 @@ auckland.ac.nz & 1  & empty & empty &  0.000000 \\
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{33\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{14 saltos} \\ \\
-Cantidad de enlaces intercontinentales: & \textbf{1} \\ \\
+Cantidad de enlaces intercontinentales: & \textbf{2} \\ \\
 Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
+
+Los outliers identifican los saltos intercontinentales AR-US ttl 7-9 y US-AU ttl 17-18. No tenemos falsos negativos ni positivos.
 
 \begin{figure}[H]
   \centering
@@ -552,6 +558,9 @@ Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
 
+Los outliers identifican los saltos intercontinentales IT-IT ttl 7-8. Esto es un falso positivo. Vemos que AR-IT ttl 6-7 hay un valor muy bajo, pensamos que la ip ttl = 7 185.70.203.20 deberia estar en AR, pero distintos sitios la ubican en IT. No entendemos que problema tenemos aca.
+
+
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{histogramas_rtt/invertisuniversity-ac-in.png}
@@ -631,11 +640,12 @@ www.uae.ma & 1  & empty & empty &  0.000000 \\
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{25\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{15 saltos} \\ \\
-Cantidad de enlaces intercontinentales: & \textbf{4} \\ \\
+Cantidad de enlaces intercontinentales: & \textbf{5} \\ \\
 Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
 
+En este caso los salto que vemos son muchos en comparaci\'on con los outliers. Esto se sebe a que las direcciones de ip estan mal ubicadas. Los outliers no se corresponden con los saltos intercontinentales. 
 
 \begin{figure}[H]
   \centering
@@ -719,11 +729,11 @@ bifrost.is & 1  & empty & empty &  0.000000 \\
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{17\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{20 saltos} \\ \\
-Cantidad de enlaces intercontinentales: & \textbf{4} \\ \\
+Cantidad de enlaces intercontinentales: & \textbf{3} \\ \\
 Cantidad de outliers según el método de Cimbala: & \textbf{2} \\ \\
 \end{tabular}
 \end{center}
-
+Los saltos que identifican los outliers son IT-IT ttl 8-9 y US-US ambos falsos positivos.
 \begin{figure}[H]
   \centering
     \includegraphics[width=0.45\textwidth]{histogramas_rtt/bifrost-is.png}
@@ -801,10 +811,12 @@ birmingham.ac.uk & 1  & empty & empty &  0.000000 \\
 \begin{tabular}{p{6.5cm}r}
 Porcentaje de saltos que no responden los $Time$ $exceeded$: & \textbf{42\%} \\ \\ 
 Largo de la ruta en términos de saltos que responden: &\textbf{11 saltos} \\ \\
-Cantidad de enlaces intercontinentales: & \textbf{1} \\ \\
+Cantidad de enlaces intercontinentales: & \textbf{2} \\ \\
 Cantidad de outliers según el método de Cimbala: & \textbf{3} \\ \\
 \end{tabular}
 \end{center}
+
+Los outliers se corresponden con los saltos AR-AR ttl 1-4 (falso positivo), AR-US ttl 7-9 y US-GB ttl 9-12. Salvo el falso positivo los demas estan bien.
 
 \begin{figure}[H]
   \centering
