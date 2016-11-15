@@ -9,3 +9,17 @@ Para dicho paquete, vamos a modificar incrementalmente el campo TTL (Time To Liv
 cuántos saltos entre red y red puede dar a lo sumo. Cuando no llega a destino debido a que no le alcanzó el TTL, 
 retorna la cantidad de milisegundos que le tomó ir hasta donde pudo llegar y volver al host origen (RTT Round Trip Time)
 y las coordenadas de geolocalización de la ip alcanzada.
+
+\subsection{Instalación de librerias necesarias}
+
+Para poder ejecutar la herramienta es necesario tener instaladas las siguientes librerias:
+
+\subsubsection{GeoIP}
+\begin{verbatim}
+pip install pygeoip
+\end{verbatim}
+
+\subsubsection{Basemap}
+\begin{verbatim}
+sudo apt-get install python-mpltoolkits.basemap
+\end{verbatim}
